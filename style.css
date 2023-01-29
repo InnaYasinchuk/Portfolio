@@ -1,71 +1,78 @@
-:root{
+:root {
   --main-color: #ffffff;
-  --accent-color:#ff4500;
+  --accent-color: #ff4500;
   --blue-color: #3765ef;
-  --dark-blue-color:#082a92;
+  --dark-blue-color: #082a92;
   --yellow-color: #fef600;
-  --title-ff: Georgia,'Times New Roman',Times, serif;
+  --title-ff: Georgia, "Times New Roman", Times, serif;
+  --project-section-color:rgb(228, 12, 189);
 }
 
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #151527;
-/* font-family: 'Roboto', sans-serif; */
-/* font-family: 'Gilroy', Arial, sans-serif; */
+  /* font-family: 'Roboto', sans-serif; */
+  /* font-family: 'Gilroy', Arial, sans-serif; */
+}
+main {
+  display: flex;
+  max-width: 1600px;
+  min-height: 580px;
+  margin: 120px auto;
+  justify-content: space-evenly;
 }
 
-.main-section{
+.main-section {
   max-width: 800px;
-  margin: 150px 40px;
+
   padding: 20px;
 }
 
-.hello{
+.hello {
   font-size: 48px;
-    font-weight: bold;
-    text-align: center;
-    color: var(--main-color);
-    font-family:var(--title-ff)
+  font-weight: bold;
+  text-align: center;
+  color: var(--main-color);
+  font-family: var(--title-ff);
 }
 
-.main-title{
+.main-title {
   font-size: 68px;
   font-weight: bold;
   text-align: center;
   color: var(--accent-color);
-  font-family: var(--title-ff)
+  font-family: var(--title-ff);
 }
 
-.title{
+.title {
   font-size: 34px;
-    font-weight: bold;
-    text-align: center;
-    color: var(--main-color);
-    font-family: var(--title-ff)
+  font-weight: bold;
+  text-align: center;
+  color: var(--main-color);
+  font-family: var(--title-ff);
 }
 
-.ukr{
+.ukr {
   color: var(--blue-color);
 }
 
-.ukr2{
+.ukr2 {
   color: var(--yellow-color);
 }
 
-.main-descr{
+.main-descr {
   margin: 50px;
   text-align: justify;
   color: var(--main-color);
   opacity: 0.4;
 }
 
-.main-button{
+.main-button {
   display: block;
   margin: 0 auto;
   background-color: var(--accent-color);
@@ -74,14 +81,96 @@ body{
   font-size: 22px;
   padding: 10px 45px;
   text-align: center;
-  border-radius: 45px 15px;
+  border-radius: 45px 10px;
   border: 1px solid var(--accent-color);
   font-family: var(--title-ff);
 }
 
-.main-button:hover{
-  background-color:var(--yellow-color);
+.main-button:hover {
+  background-color: var(--yellow-color);
   color: var(--dark-blue-color);
   border-color: var(--yellow-color);
 }
 
+.main-photo {
+  max-width: 500px;
+  border-radius: 50px 5px;
+  border: 3px solid var(--yellow-color);
+  display: block;
+  margin: 30px auto;
+}
+
+.project-title{
+  font-size: 68px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--yellow-color);
+    font-family: var(--title-ff);
+}
+.project {
+  display: flex;
+  max-width: 1800px;
+  margin: 70px auto;
+  justify-content: space-evenly;
+}
+
+.weather, .dentist{
+  max-width: 500px;
+  align-content: center;
+  margin: 20px;
+}
+
+.project-descr{
+  margin: 20px;
+    text-align: justify;
+    color: var(--main-color);
+    opacity: 0.4;
+}
+
+.weather-button{
+  display: block;
+    margin: 0 auto;
+    background-color: var(--yellow-color);
+    color: var(--dark-blue-color);
+    font-weight: bold;
+    font-size: 18px;
+    padding: 8px 35px;
+    text-align: center;
+    border-radius: 45px 10px;
+    border: 1px solid var(--yellow-color);
+    font-family: var(--title-ff);
+}
+
+.dentist-button {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--yellow-color);
+  color: var(--dark-blue-color);
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 35px;
+  text-align: center;
+  border-radius: 10px 45px;
+  border: 1px solid var(--yellow-color);
+  font-family: var(--title-ff);
+}
+
+article img{
+  border: 2px solid var(--yellow-color);
+}
+
+
+@media screen and (max-width: 1024px) {
+  main {
+    max-width: 800px;
+    flex-direction: column;
+    align-content: center;
+    margin: 50px auto;
+  }
+    .project{
+      flex-direction: column;
+      justify-content: center;
+      max-width:500px;
+     
+    }
+}
