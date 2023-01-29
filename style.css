@@ -104,8 +104,10 @@ main {
   font-size: 68px;
     font-weight: bold;
     text-align: center;
-    color: var(--yellow-color);
+    color: var(--main-color);
     font-family: var(--title-ff);
+    text-shadow: 5px 8px 5px var(--blue-color);
+    
 }
 .project {
   display: flex;
@@ -115,13 +117,13 @@ main {
 }
 
 .weather, .dentist{
-  max-width: 500px;
+  max-width: 550px;
   align-content: center;
   margin: 20px;
 }
 
 .project-descr{
-  margin: 20px;
+  margin: 30px 15px;
     text-align: justify;
     color: var(--main-color);
     opacity: 0.4;
@@ -130,33 +132,45 @@ main {
 .weather-button{
   display: block;
     margin: 0 auto;
-    background-color: var(--yellow-color);
-    color: var(--dark-blue-color);
+    background-color: var(--dark-blue-color);
+    color: var(--main-color);
     font-weight: bold;
     font-size: 18px;
     padding: 8px 35px;
     text-align: center;
     border-radius: 45px 10px;
-    border: 1px solid var(--yellow-color);
+    border: 1px solid var(--dark-blue-color);
     font-family: var(--title-ff);
+    box-shadow: 5px 5px 25px var(--main-color);
 }
 
 .dentist-button {
   display: block;
   margin: 0 auto;
-  background-color: var(--yellow-color);
-  color: var(--dark-blue-color);
+  background-color: var(--dark-blue-color);
+  color: var(--main-color);
   font-weight: bold;
   font-size: 18px;
   padding: 8px 35px;
   text-align: center;
   border-radius: 10px 45px;
-  border: 1px solid var(--yellow-color);
+  border: 1px solid var(--dark-blue-color);
   font-family: var(--title-ff);
+  box-shadow: 5px 5px 25px var(--main-color);
 }
 
-article img{
-  border: 2px solid var(--yellow-color);
+article.weather img{
+  border: 10px solid var(--dark-blue-color);
+  box-shadow: 5px 5px 25px var(--main-color);
+  border-radius: 45px 5px;
+  
+}
+
+article.dentist img {
+  border: 10px solid var(--dark-blue-color);
+  box-shadow: 5px 5px 25px var(--main-color);
+  border-radius: 5px 45px;
+
 }
 
 
@@ -170,7 +184,7 @@ article img{
     .project{
       flex-direction: column;
       justify-content: center;
-      max-width:500px;
+      max-width:600px;
      
     }
 }
