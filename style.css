@@ -29,7 +29,6 @@ main {
 
 .main-section {
   max-width: 800px;
-
   padding: 20px;
 }
 
@@ -171,6 +170,34 @@ article.dentist img {
   box-shadow: 5px 5px 25px var(--main-color);
   border-radius: 5px 45px;
 
+}
+
+.main-photo-about{
+  max-width: 450px;
+    border-radius: 8px;
+    border: 3px solid var(--main-color);
+    box-shadow: 5px 5px 10px var(--main-color);
+    display: block;
+    margin: 30px auto;
+}
+
+.main-section-about {
+  max-width: 900px;
+  padding: 20px;
+}
+
+.main-button-about {
+  display: block;
+  margin: 0 auto;
+  background-color: var(--blue-color);
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 22px;
+  padding: 10px 45px;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid var(--dark-blue-color);
+  font-family: var(--title-ff);
 }
 
 
