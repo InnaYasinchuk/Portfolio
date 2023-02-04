@@ -236,6 +236,32 @@ article.dentist img {
   text-decoration: none;
 }
 
+.contact{
+  margin: 120px auto;
+  max-width: 800px;
+}
+
+.contact-link{
+  text-decoration: none;
+  font-size: 24px;
+  
+}
+
+.contact-images{
+  display: flex;
+  max-width: 1300px;
+  margin: 50px auto;
+  justify-content: space-between;
+}
+
+
+.contact-img{
+  width: 370px;
+  height: 370px;
+  border-radius: 10px 45px;
+  box-shadow: 5px 5px 25px var(--main-color);
+}
+
 
 
 @media screen and (max-width: 1024px) {
@@ -251,4 +277,11 @@ article.dentist img {
       max-width:600px;
      
     }
+        .contact-images{
+          max-width: 500px;
+          height: 1200px;
+            flex-direction: column;
+            align-content: center;
+            margin: 50px auto;
+        }
 }
