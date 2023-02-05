@@ -5,7 +5,7 @@
   --dark-blue-color: #082a92;
   --yellow-color: #fef600;
   --title-ff: Georgia, "Times New Roman", Times, serif;
-  --project-section-color:rgb(228, 12, 189);
+  --project-section-color: rgb(228, 12, 189);
 }
 
 * {
@@ -19,11 +19,54 @@ body {
   /* font-family: 'Roboto', sans-serif; */
   /* font-family: 'Gilroy', Arial, sans-serif; */
 }
+header {
+  display: flex;
+  margin: 30px auto;
+  justify-content: space-between;
+  max-width: 1600px;
+}
+
+.logo {
+  border-radius: 15px 0px;
+  border: 1px solid var(--yellow-color);
+  margin-left: 20px;
+}
+.logo-text {
+  font-size: 18px;
+    font-weight: bold;
+    margin-left: 15px;
+    color: var(--accent-color);
+    font-family: var(--title-ff);
+  }
+
+.nav {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-between;
+  max-width: 500px;
+  right: 10px;
+  margin-right: 20px;
+}
+
+.nav-item {
+  font-size: 20px;
+  font-weight: bold;
+   color: var(--main-color);
+  font-family: var(--title-ff);
+  text-decoration: none;
+  transition: 3ms;
+}
+
+.nav-item:hover, .active{
+  color: var(--accent-color);
+}
+
 main {
   display: flex;
   max-width: 1600px;
   min-height: 580px;
-  margin: 120px auto;
+  margin: 50px auto;
   justify-content: space-evenly;
 }
 
@@ -83,6 +126,8 @@ main {
   border-radius: 45px 10px;
   border: 1px solid var(--accent-color);
   font-family: var(--title-ff);
+  text-decoration: none;
+  max-width: 300px;
 }
 
 .main-button:hover {
@@ -99,14 +144,13 @@ main {
   margin: 30px auto;
 }
 
-.project-title{
+.project-title {
   font-size: 68px;
-    font-weight: bold;
-    text-align: center;
-    color: var(--main-color);
-    font-family: var(--title-ff);
-    text-shadow: 5px 8px 5px var(--blue-color);
-    
+  font-weight: bold;
+  text-align: center;
+  color: var(--main-color);
+  font-family: var(--title-ff);
+  text-shadow: 5px 8px 5px var(--blue-color);
 }
 .project {
   display: flex;
@@ -115,32 +159,35 @@ main {
   justify-content: space-evenly;
 }
 
-.weather, .dentist{
+.weather,
+.dentist {
   max-width: 550px;
   align-content: center;
   margin: 20px;
 }
 
-.project-descr{
+.project-descr {
   margin: 30px 15px;
-    text-align: justify;
-    color: var(--main-color);
-    opacity: 0.4;
+  text-align: justify;
+  color: var(--main-color);
+  opacity: 0.4;
 }
 
-.weather-button{
+.weather-button {
   display: block;
-    margin: 0 auto;
-    background-color: var(--dark-blue-color);
-    color: var(--main-color);
-    font-weight: bold;
-    font-size: 18px;
-    padding: 8px 35px;
-    text-align: center;
-    border-radius: 45px 10px;
-    border: 1px solid var(--dark-blue-color);
-    font-family: var(--title-ff);
-    box-shadow: 5px 5px 25px var(--main-color);
+  margin: 0 auto;
+  background-color: var(--dark-blue-color);
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 18px;
+  padding: 8px 35px;
+  text-align: center;
+  border-radius: 45px 10px;
+  border: 1px solid var(--dark-blue-color);
+  font-family: var(--title-ff);
+  box-shadow: 5px 5px 25px var(--main-color);
+  text-decoration: none;
+  max-width: 250px;
 }
 
 .dentist-button {
@@ -156,29 +203,29 @@ main {
   border: 1px solid var(--dark-blue-color);
   font-family: var(--title-ff);
   box-shadow: 5px 5px 25px var(--main-color);
+  text-decoration: none;
+  max-width: 250px;
 }
 
-article.weather img{
+article.weather img {
   border: 10px solid var(--dark-blue-color);
   box-shadow: 5px 5px 25px var(--main-color);
   border-radius: 45px 5px;
-  
 }
 
 article.dentist img {
   border: 10px solid var(--dark-blue-color);
   box-shadow: 5px 5px 25px var(--main-color);
   border-radius: 5px 45px;
-
 }
 
-.main-photo-about{
+.main-photo-about {
   max-width: 450px;
-    border-radius: 8px;
-    border: 3px solid var(--main-color);
-    box-shadow: 5px 5px 10px var(--main-color);
-    display: block;
-    margin: 30px auto;
+  border-radius: 8px;
+  border: 3px solid var(--main-color);
+  box-shadow: 5px 5px 10px var(--main-color);
+  display: block;
+  margin: 30px auto;
 }
 
 .main-section-about {
@@ -186,7 +233,8 @@ article.dentist img {
   padding: 20px;
 }
 
-.main-button-about {
+.button-about {
+  max-width: 300px;
   display: block;
   margin: 0 auto;
   background-color: var(--blue-color);
@@ -198,15 +246,16 @@ article.dentist img {
   border-radius: 8px;
   border: 2px solid var(--dark-blue-color);
   font-family: var(--title-ff);
+  text-decoration: none;
 }
-.project-title-work{
+.project-title-work {
   font-size: 68px;
-    font-weight: bold;
-    text-align: center;
-    color: var(--main-color);
-    font-family: var(--title-ff);
-    text-shadow: 5px 8px 5px var(--blue-color);
-  margin: 100px auto 50px auto;
+  font-weight: bold;
+  text-align: center;
+  color: var(--main-color);
+  font-family: var(--title-ff);
+  text-shadow: 5px 8px 5px var(--blue-color);
+  margin: 20px auto 50px auto;
 }
 .weather,
 .dentist {
@@ -214,7 +263,7 @@ article.dentist img {
   align-content: center;
   margin: 20px;
 }
-.buttons{
+.buttons {
   display: flex;
   max-width: 450px;
   margin: 10px auto;
@@ -236,52 +285,55 @@ article.dentist img {
   text-decoration: none;
 }
 
-.contact{
-  margin: 120px auto;
+.contact {
+  margin: 30px auto;
   max-width: 800px;
 }
 
-.contact-link{
+.contact-link {
   text-decoration: none;
   font-size: 24px;
-  
 }
 
-.contact-images{
+.contact-images {
   display: flex;
   max-width: 1300px;
   margin: 50px auto;
   justify-content: space-between;
 }
 
-
-.contact-img{
-  width: 370px;
-  height: 370px;
+.contact-img {
+  width: 350px;
+  height: 350px;
   border-radius: 10px 45px;
   box-shadow: 5px 5px 25px var(--main-color);
 }
 
-
-
 @media screen and (max-width: 1024px) {
+
+  
   main {
     max-width: 800px;
     flex-direction: column;
     align-content: center;
     margin: 50px auto;
   }
-    .project{
-      flex-direction: column;
-      justify-content: center;
-      max-width:600px;
-     
-    }
-        .contact-images{
-          max-width: 500px;
-          height: 1200px;
-            flex-direction: column;
-            align-content: center;
-            margin: 50px auto;
-        }
+  .logo-text{
+    display: none;
+  }
+
+  .project {
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+  }
+  .contact-images {
+    max-width: 500px;
+    height: 1200px;
+    flex-direction: column;
+    align-content: center;
+    margin: 50px auto;
+  }
+
+
 }
