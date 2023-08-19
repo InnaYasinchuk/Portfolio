@@ -160,7 +160,7 @@ main {
 }
 
 .weather,
-.dentist {
+.dentist, .kulyampa {
   max-width: 550px;
   align-content: center;
   margin: 20px;
@@ -217,6 +217,13 @@ article.dentist img {
   border: 10px solid var(--dark-blue-color);
   box-shadow: 5px 5px 25px var(--main-color);
   border-radius: 5px 45px;
+}
+
+article.kulyampa img {
+  border: 10px solid var(--dark-blue-color);
+  box-shadow: 5px 5px 25px var(--main-color);
+  border-radius: 5px 45px;
+  max-height: 449px;
 }
 
 .main-photo-about {
