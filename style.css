@@ -108,7 +108,7 @@ main {
 }
 
 .main-descr {
-  margin: 50px;
+  margin: 25px;
   text-align: justify;
   color: var(--main-color);
   opacity: 0.4;
